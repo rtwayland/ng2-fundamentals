@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 	selector: 'app-root',
 	template: `
 		<navbar></navbar>
-		<events-list></events-list>
+		<router-outlet></router-outlet>
 	`
 })
 export class AppComponent {
