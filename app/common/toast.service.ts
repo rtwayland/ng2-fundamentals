@@ -1,6 +1,6 @@
-import { OpaqueToken } from '@angular/core';
+import { InjectionToken } from "@angular/core";
 
-export let TOASTER_TOKEN = new OpaqueToken('toastr');
+export let TOASTER_TOKEN = new InjectionToken<string>('toastr');
 
 export interface Toastr {
 	success (msg: string, title?: string): void;
