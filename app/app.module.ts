@@ -16,15 +16,20 @@ import {
 } from './events/index'
 
 import { NavBarComponent } from "./nav/navbar.component";
-import { TOASTER_TOKEN, Toastr } from "./common/toast.service";
 import { RouterModule } from "@angular/router";
 import { appRoutes } from "./routes";
 import { Error404Component } from "./errors/404.component";
 import { AuthService } from "./user/auth.service";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { CollapsibleWellComponent } from "./common/collapsible-well.component";
+import {
+	CollapsibleWellComponent,
+	TOASTER_TOKEN,
+	Toastr,
+	JQ_TOKEN
+} from "./common/index";
 
 declare let toastr: Toastr
+declare let jQuery: Object
 
 @NgModule({
 	imports: [
